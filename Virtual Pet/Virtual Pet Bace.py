@@ -1,6 +1,6 @@
 #Nicola Batty
 #09/06/2015
-#Virtual Pet
+#Virtual Pet Bace
 
 class VirtualPet:
     def __init__(self, name):
@@ -44,11 +44,4 @@ class VirtualPet:
         elif self. energy < 0:
             hunger = "YOUR PET DIED OF HUNGER! YOU ARE A BAD PERSON! A VEARY BAD PERSON!"
 
-Name = input("What would you like to call your pet?: ")
-YourVirtualPet = VirtualPet(Name)
-Stats = []
-hunger = YourVirtualPet.HungerStats()
-age = YourVirtualPet.AgeStats()
-mood = YourVirtualPet.MoodStats()
-tired = YourVirtualPet.TiredStats()
-heth = YourVirtualPet.HethStats()
+V
