@@ -1,6 +1,6 @@
 #Nicola Batty
 #09/06/2015
-#Virtual Pet Bace
+#Virtual Pet Bace 
 
 class VirtualPet:
     def __init__(self, name):

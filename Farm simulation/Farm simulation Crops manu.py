@@ -1,6 +1,6 @@
 #Nicola Batty
 #12/06/2015
-#Farm simulation Crops manu
+#Farm simulation Crops manu 
 
 from wheat_class import *
 from potato_class import *
