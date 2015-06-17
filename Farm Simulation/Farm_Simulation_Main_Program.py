@@ -2,9 +2,9 @@
 #12/06/2015
 #Farm Simulation Main Program 
 
-from Farm simulation Crop import *
-from Farm simulation Crop wheat import *
-from Farm simulation Crop Potato import *
+from Farm_simulation_Crop import *
+from Farm_simulation_Crop_Wheat import *
+from Farm_simulation_Crop_Potato import *
 
 def auto_grow(crop, days):
     for day in range(days):
