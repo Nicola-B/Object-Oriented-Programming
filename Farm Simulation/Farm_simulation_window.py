@@ -6,6 +6,7 @@ import sys
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from Farm_simulation_radio_button_widget import *
 
 class CropWindow(QMainWindow):
     def __init__(self):

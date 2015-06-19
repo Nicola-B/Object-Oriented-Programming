@@ -10,12 +10,12 @@ class NameWidget_2(QWidget):
     def __init__(self):
         super().__init__()
         self.Lable = QLabel(None)
-        self.Back = QPushButton("Back")
+        self.Button = QPushButton("Back")
         self.Layout = QVBoxLayout()
         self.Layout.addWidget(self.Lable)
-        self.Layout.addWidget(self.Back)
+        self.Layout.addWidget(self.Button)
         self.setLayout(self.Layout)
-        self.Back.clicked.connect(self.Back_Pushed)
+        self.Button.clicked.connect(self.Back_Pushed)
 
     def Back_Pushed(self):
         self.Back.emit()
