@@ -8,7 +8,7 @@ class VirtualPet:
         self.size = 5
         self.age = 0
         self.energy = 50
-        self.foods = ["biscets", "orenges", "postasheose"]
+        self.foods = [None]
         self.mood = 5
         self.tired = 5
         self.heth = 10
@@ -27,7 +27,7 @@ class VirtualPet:
             elif food == self.foods[2]:
                 self.energy = self.energy + 10
                 self.mood = self.mood + 3
-                print("mmmmmmmmmmm postasheose")
+                print("mmmmmmmmmmm {0}".format(self.foods[2])
         else:
             print("I'm not eating that")
             self.mood = self.mood - 1
