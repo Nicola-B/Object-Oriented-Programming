@@ -19,7 +19,7 @@ class Crop:
         return {"light need":self._light_need, "water need":self._water_need}
 
     def report(self):
-        return {"type":self._type, "status":self._status, "growth":self._growth, "days gowing":self._days_growing}
+        return {"type":self._type, "status":self._status, "growth":self._growth, "days growing":self._days_growing}
 
     def _update_status(self):
         if self._growth > 15:
