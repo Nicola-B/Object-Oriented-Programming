@@ -1,6 +1,6 @@
 #Nicola Batty
 #12/06/2015
-#Farm Simulation Main Program 
+#Farm Simulation Crops Main Program 
 
 from Farm_simulation_Crop import *
 from Farm_simulation_Crop_Wheat import *

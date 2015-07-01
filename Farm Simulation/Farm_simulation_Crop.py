@@ -2,8 +2,6 @@
 #10/06/2015
 #Farm simulation Crop 
 
-import random
-
 class Crop:
     """A generic food crop"""
     def __init__(self, growth_rate, light_need, water_need):
