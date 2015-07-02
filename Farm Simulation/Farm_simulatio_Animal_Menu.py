@@ -1,17 +1,17 @@
 #Nicola Batty
-#12/06/2015
-#Farm simulation Crops manu 
+#02/07/2015
+#Farm simulation animation manu 
 
-from Farm_simulation_Crop_Wheat import *
-from Farm_simulation_Crop_Potato import *
-from Farm_Simulation_Crops_Main_Program import *
+from Farm_simulation_Animal_Cows import *
+from Farm_simulation_Animal_Sheep import *
+from Farm_simulation_Animal_Main_Program import *
 
 def display_menu():
     print()
     print("Which crop whould you like to create?")
     print()
-    print("1) Potato")
-    print("2) Wheat")
+    print("1) Cow")
+    print("2) Sheep")
     print()
     print("Please select an option from the above menu") 
 
@@ -21,6 +21,7 @@ def select_option():
         try:
             choice = int(input("Option seleced: "))
             if choice in (1,2):
+                print()
                 valid_option = True
             else:
                 print("Please enter a valid option")
@@ -28,18 +29,20 @@ def select_option():
             print("Please enter a valid option")
     return choice
 
-def create_crop():
+def create_animal():
     display_menu()
     choice = select_option()
+    Name = input("What would you like to call your new animal: ")
+    print()
     if choice == 1:
-        new_crop = Potato()
+        new_animal = Cow(Name)
     elif choice == 2:
-        new_crop = Wheat()
-    return new_crop
+        new_animal = Sheep(Name)
+    return new_animal
 
 def main():
-    new_crop = create_crop()
-    manage_crop(new_crop)
+    new_animal = create_animal()
+    manage_animal(new_animal)
 
 if __name__ == "__main__":
     main()
