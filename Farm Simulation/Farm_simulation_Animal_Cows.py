@@ -5,7 +5,7 @@
 from Farm_simulation_Animal import *
 
 class Cow(Animal):
-    # a cow
+    # a cow code
     def __init__(self, Name):
         super().__init__(Name, 5, 6, 7)
         self.type = "Cow"

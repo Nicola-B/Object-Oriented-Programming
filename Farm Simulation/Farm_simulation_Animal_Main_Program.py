@@ -88,5 +88,6 @@ def main():
     new_animal = Animal(1,4,3, Name)
     manage_animal(new_animal)
 
+#so if I set this program to run it will run starting from this one
 if __name__ == "__main__":
     main()

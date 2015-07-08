@@ -1,6 +1,6 @@
 #Nicola Batty
 #02/07/2015
-#Farm simulation animation manu 
+#Farm simulation animation manu
 
 from Farm_simulation_Animal_Cows import *
 from Farm_simulation_Animal_Sheep import *

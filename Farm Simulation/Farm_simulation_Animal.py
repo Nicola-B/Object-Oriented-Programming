@@ -3,7 +3,7 @@
 #Farm simulation Animal
 
 class Animal:
-    #A farm animal
+    #A farm animal code
     def __init__(self, Name, food_need, water_need, growth_rate):
         self.weight = 0
         self.days_growing = 0
