@@ -25,7 +25,7 @@ class Field:
             return False
 
     def add_animal(self, animal):
-        if len(self._animals) < self._max_animalss:
+        if len(self._animals) < self._max_animals:
             self._animals.append(animal)
             return True
         else:
@@ -54,7 +54,7 @@ class Field:
             needs = crop.needs()
             if needs["light need"] > light:
                 light = needs["light need"]
-            if need["water need"] > water:
+            if needs["water need"] > water:
                 water = needs["water need"]
         for animal in self._animals:
             need = animal.needs()
@@ -85,7 +85,7 @@ def display_crops(crop_list):
     print("This following crops are in this field: ")
     pos = 1
     for crop in crop_list:
-        print("{0:>2}) {1}".format(pos, crop.repot()))
+        print("{0:>2}) {1}".format(pos, crop.report()))
         pos += 1
 
 def display_animal(animal_list):
@@ -93,7 +93,7 @@ def display_animal(animal_list):
     print("This following animals are in this field: ")
     pos = 1
     for animal in animal_list:
-        print("{0:>2}) {1}".format(pos, animal.repot()))
+        print("{0:>2}) {1}".format(pos, animal.report()))
         pos += 1
 
 def select_crop(length_list):
@@ -132,17 +132,8 @@ def main():
     new_field.plant_crop(Potato())
     new_field.add_animal(Sheep("Shaun"))
     new_field.add_animal(Cow("Jim"))
-    #harvest_crop_from_field(new_field)
-    #print(new_field._crops)
-    #remove_animal_from_field(new_field)
-    #print(new_field._animals)
-    report = new_field.report_contents()
-    print(report["animals"])
-    print()
-    print(report["crops"])
-    print()
-    report = new_field.report_needs()
-    print(report)
+    display_crops(new_field._crops)
+    display_animal(new_field._animals)
     
 if __name__== "__main__":
     main()

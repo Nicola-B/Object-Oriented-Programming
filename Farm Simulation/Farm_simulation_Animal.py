@@ -15,22 +15,22 @@ class Animal:
         self.name = Name
 
     def needs(self):
-        return {"food meed":self.food_need, "water need":self.water_need}
+        return {"food need":self.food_need, "water need":self.water_need}
 
     def report(self):
         return {"name":self.name, "type":self.type, "status":self.status, "days growing":self.days_growing, "weight":self.weight}
 
     def update_status(self):
         if self.weight > 32:
-            self.status = "obese"
+            self.status = "old"
         elif self.weight > 22:
-            self.status = "fat"
+            self.status = "mature"
         elif self.weight > 12:
             self.status = "normal"
         elif self.weight > 2:
-            self.status = "thiner then normal"
+            self.status = "yonung"
         elif self.weight == 2:
-            self.status = "thin"
+            self.status = "baby"
 
     def grow(self, food, water):
         if food >= self.food_need and water >= self.water_need:
