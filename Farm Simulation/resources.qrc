@@ -1,5 +1,5 @@
 <!DOCTYPE RCC><RCC VERSION="1.0">
-	<qresoutce>
+	<qresource>
 		<file alias="wheat_seed.png">Images/Wheat/seed.png</file>
 		<file alias="wheat_seedling.png">Images/Wheat/seedling.png</file>
 		<file alias="wheat_young.png">Images/Wheat/young.png</file>
@@ -7,8 +7,8 @@
 		<file alias="wheat_old.png">Images/Wheat/old.png</file>
 		<file alias="potato_seed.png">Images/Potato/seed.png</file>
 		<file alias="potato_seedling.png">Images/Potato/seedling.png</file>
-		<file alias="potato_young.png">Images/Potato/younf.png</file>
+		<file alias="potato_young.png">Images/Potato/young.png</file>
 		<file alias="potato_mature.png">Images/Potato/mature.png</file>
 		<file alias="potato_old.png">Images/Potato/old.png</file>
-	</qresoutce>
+	</qresource>
 </RCC>
