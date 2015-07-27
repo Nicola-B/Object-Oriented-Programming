@@ -125,12 +125,23 @@ class CropWindow(QMainWindow):
 
     def update_crop_view_status(self):
         crop_status_report = self.simulated_crop.report()#get the crop report
-
+        
         #update the text fields
         self.growth_line_edit.setText(str(crop_status_report["growth"]))
         self.days_line_edit.setText(str(crop_status_report["days growing"]))
         self.status_line_edit.setText(str(crop_status_report["status"]))
-        
+
+        if crop_status_report["status"] == "Seed":
+            self.crop_view.switch_scene(0)
+        elif crop_status_report["status"] == "Seedling":
+            self.crop_view.switch_scene(1)
+        elif crop_status_report["status"] == "Young":
+            self.crop_view.switch_scene(2)
+        elif crop_status_report["status"] == "Mature":
+            self.crop_view.switch_scene(3)
+        elif crop_status_report["status"] == "Old":
+            self.crop_view.switch_scene(4)
+
 def main():
     crop_simulation = QApplication(sys.argv)#create new application
     crop_window = CropWindow()#create new instance of main window
