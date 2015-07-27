@@ -1,4 +1,4 @@
-<!DOCTYPE RCC><RCC VERSION="1.0">
+<!DOCTYPE RCC><RCC version="1.0">
 	<qresource>
 		<file alias="wheat_seed.png">Images/Wheat/seed.png</file>
 		<file alias="wheat_seedling.png">Images/Wheat/seedling.png</file>
