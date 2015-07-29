@@ -12,9 +12,9 @@ class Sheep(Animal):
 
     def grow(self, food, water):
         if food >= self.food_need and water >= self.water_need:
-            if self.status == "thiner then normal" and food > self.food_need:
+            if self.status == "Baby" and food > self.food_need:
                 self.weight += self.growth_rate * 1.5
-            elif self.status == "thin" and food > self.food_need:
+            elif self.status == "Poor" and food > self.food_need:
                 self.weight += self.growth_rate * 2
             else:
                 self.weight += self.growth_rate

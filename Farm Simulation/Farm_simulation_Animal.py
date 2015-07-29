@@ -21,16 +21,14 @@ class Animal:
         return {"name":self.name, "type":self.type, "status":self.status, "days growing":self.days_growing, "weight":self.weight}
 
     def update_status(self):
-        if self.weight > 32:
-            self.status = "old"
-        elif self.weight > 22:
-            self.status = "mature"
+        if self.weight > 22:
+            self.status = "Baby"
         elif self.weight > 12:
-            self.status = "normal"
+            self.status = "Poor"
         elif self.weight > 2:
-            self.status = "yonung"
+            self.status = "Fine"
         elif self.weight == 2:
-            self.status = "baby"
+            self.status = "Prime"
 
     def grow(self, food, water):
         if food >= self.food_need and water >= self.water_need:
