@@ -1,22 +1,23 @@
 <!DOCTYPE RCC><RCC version="1.0">
 	<qresource>
-		<file alias="wheat_seed.png">Images/Wheat/seed.png</file>
-		<file alias="wheat_seedling.png">Images/Wheat/seedling.png</file>
-		<file alias="wheat_young.png">Images/Wheat/young.png</file>
-		<file alias="wheat_mature.png">Images/Wheat/mature.png</file>
-		<file alias="wheat_old.png">Images/Wheat/old.png</file>
-		<file alias="potato_seed.png">Images/Potato/seed.png</file>
-		<file alias="potato_seedling.png">Images/Potato/seedling.png</file>
-		<file alias="potato_young.png">Images/Potato/young.png</file>
-		<file alias="potato_mature.png">Images/Potato/mature.png</file>
-		<file alias="potato_old.png">Images/Potato/old.png</file>
-		<file alias="cow_baby.png">Images/Potato/seed.png</file>
-		<file alias="cow_poor.png">Images/Potato/seedling.png</file>
-		<file alias="cow_fine.png">Images/Potato/young.png</file>
-		<file alias="cow_prime.png">Images/Potato/mature.png</file>
-		<file alias="sheep_baby.png">Images/Potato/seed.png</file>
-		<file alias="sheep_poor.png">Images/Potato/seedling.png</file>
-		<file alias="sheep_fine.png">Images/Potato/young.png</file>
-		<file alias="sheep_prime.png">Images/Potato/mature.png</file>
+		<file alias="field_background.png">Images/fieldbackground.png</file>
+		<file alias="wheat_seed.png">Images/Crops/Wheat/seed.png</file>
+		<file alias="wheat_seedling.png">Images/Crops/Wheat/seedling.png</file>
+		<file alias="wheat_young.png">Images/Crops/Wheat/young.png</file>
+		<file alias="wheat_mature.png">Images/Crops/Wheat/mature.png</file>
+		<file alias="wheat_old.png">Images/Crops/Wheat/old.png</file>
+		<file alias="potato_seed.png">Images/Crops/Potato/seed.png</file>
+		<file alias="potato_seedling.png">Images/Crops/Potato/seedling.png</file>
+		<file alias="potato_young.png">Images/Crops/Potato/young.png</file>
+		<file alias="potato_mature.png">Images/Crops/Potato/mature.png</file>
+		<file alias="potato_old.png">Images/Crops/Potato/old.png</file>
+		<file alias="cow_baby.png">Images/Animals/Cow/baby.png</file>
+		<file alias="cow_poor.png">Images/Animals/Cow/poor.png</file>
+		<file alias="cow_fine.png">Images/Animals/Cow/fine.png</file>
+		<file alias="cow_prime.png">Images/Animals/Cow/prime.png</file>
+		<file alias="sheep_baby.png">Images/Animals/Sheep/baby.png</file>
+		<file alias="sheep_poor.png">Images/Animals/Sheep/poor.png</file>
+		<file alias="sheep_fine.png">Images/Animals/Sheep/fine.png</file>
+		<file alias="sheep_prime.png">Images/Animals/Sheep/prime.png</file>
 	</qresource>
 </RCC>
