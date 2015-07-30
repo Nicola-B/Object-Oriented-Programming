@@ -4,7 +4,7 @@
 
 from Farm_simulation_graphic_field_item_class import *
 
-class CropItemGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
+class CropGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
     #This class procides a pixmap item with a preset image for the crop
 
     #constructor

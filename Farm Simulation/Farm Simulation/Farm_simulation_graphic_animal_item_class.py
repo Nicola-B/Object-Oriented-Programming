@@ -4,7 +4,7 @@
 
 from Farm_simulation_graphic_field_item_class import *
 
-class AnimalItemGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
+class AnimalGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
     #This class procides a pixmap item with a preset image for the animal
 
     #constructor
@@ -21,6 +21,4 @@ class AnimalItemGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
         elif self.animal._status == "Fine":
             self.setPixmap(QPixmap(self.available_graphics[2]).scaledToWith(25,1))
         elif self.animal._status == "Prime":
-            self.setPixmap(QPixmap(self.available_graphics[3]).scaledToWith(25,1)
-
-    
+            self.setPixmap(QPixmap(self.available_graphics[3]).scaledToWith(25,1))
