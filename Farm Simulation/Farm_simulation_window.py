@@ -19,7 +19,7 @@ from Farm_simulation_Crop_Potato import *
 class CropWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Ctop Simulator")
+        self.setWindowTitle("Crop Simulator")
         self.create_select_crop_layout()
 
         self.stacked_layout = QStackedLayout()# this holds the warious layouts this window needs

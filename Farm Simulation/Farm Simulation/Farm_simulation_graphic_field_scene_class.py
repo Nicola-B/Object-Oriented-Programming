@@ -25,3 +25,26 @@ class FieldGraphicsScene(QGraphicsScene):
         self.background_picture = QPixmap(":/field_background.png")
         self.background_brush.setTexture(self.background_picture)
         self.setBackgroundBrush(self.background_brush)
+
+    #This method orrides the parent method
+    def dragEnterEvent(self, event):
+        #what to do if an object is dragged into the scene
+        event.accept()
+
+    def dragMoveEvent(self, event):
+        event.accept()
+
+    def dropEvent(self, event):
+        event.accept()
+
+        #what to do if an object is dropped on the scene
+        if event.mimeData().hasFormat("application/x-wheat"):
+            print("wheat")
+        elif event.mimeData().hasFormat("application/x-potato"):
+            print("potato")
+        elif event.mimeData().hasFormat("application/x-cow"):
+            print("cow")
+        elif event.mimeData().hasFormat("application/x-sheep"):
+            print("sheep")
+
+            
