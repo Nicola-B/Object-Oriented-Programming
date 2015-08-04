@@ -17,5 +17,5 @@ class PotatoGraphicsPixmapItem(CropGraphicsPixmapItem):
                                    ":/potato_old.png"]
         super().__init__(self.available_graphics)
 
-        self.crop = potato()
+        self.crop = Potato()
 
