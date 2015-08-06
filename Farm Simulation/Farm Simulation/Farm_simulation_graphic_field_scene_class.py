@@ -28,13 +28,19 @@ class FieldGraphicsScene(QGraphicsScene):
 
     def harvest_crop(self, crop_to_harvest):
         position = self.field._crops.index(crop_to_harvest)
-        self.Field.harvest_crop(position) #remove crop from field
+        self.field.harvest_crop(position) #remove crop from field
         self.removeItem(crop_to_harvest) #remove visual representation
 
     def remove_animal(self, animal_to_remove):
         position = self.field._animals.index(animal_to_remove)
         self.field.remove_animal(position) #remove crop from field
         self.removeItem(animal_to_remove) #remove visual representation
+
+    def update_status(self):
+        for each in self.field._crops:
+            each.update_status()
+        for each in self.field._animals:
+            each.update_status()
 
     def _drop_position(self, item):
         cursor_position = QCursor.pos() #global cursor position

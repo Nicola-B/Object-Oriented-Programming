@@ -14,14 +14,20 @@ class AnimalGraphicsPixmapItem(FieldItemGraphicsPixmapItem):
         self.animal = None
 
     def update_status(self):
-        if self.animal._status == "Baby":
+        if self.animal.status == "Baby":
             self.setPixmap(QPixmap(self.available_graphics[0]).scaledToWith(25,1))
-        elif self.animal._status == "Poor":
+        elif self.animal.status == "Poor":
             self.setPixmap(QPixmap(self.available_graphics[1]).scaledToWith(25,1))
-        elif self.animal._status == "Fine":
+        elif self.animal.status == "Fine":
             self.setPixmap(QPixmap(self.available_graphics[2]).scaledToWith(25,1))
-        elif self.animal._status == "Prime":
+        elif self.animal.status == "Prime":
             self.setPixmap(QPixmap(self.available_graphics[3]).scaledToWith(25,1))
+
+    def needs(self):
+        return self.animal.needs()
+
+    def grow(self, feed, water):
+        self.animal.grow(feed, water)
 
     def _remove_animal(self):
         self.scene().remove_animal(self)
