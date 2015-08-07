@@ -13,7 +13,8 @@ from Farm_simulation_graphic_wheat_item_class import *
 from Farm_simulation_graphic_potato_item_class import *
 from Farm_simulation_graphic_cow_item_class import *
 from Farm_simulation_graphic_sheep_item_class import *
-from Farm_simulation_graphic_drag_label_class import*
+from Farm_simulation_graphic_drag_label_class import *
+from Farm_simulation_field_manual_grow_dialog_class import *
 
 class FieldWindow(QMainWindow):
     #This class creates a main window to observe the growth of a simulated field
@@ -52,7 +53,7 @@ class FieldWindow(QMainWindow):
         self.addToolBar(self.animal_tool_bar)
 
         self.field_graphics_view = QGraphicsView()
-        self.field_graphics_view.setScene(FieldGraphicsScene(1,5))
+        self.field_graphics_view.setScene(FieldGraphicsScene(2,5))
 
         self.field_graphics_view.setFixedHeight(400)
         self.field_graphics_view.setFixedWidth(400)
@@ -77,13 +78,21 @@ class FieldWindow(QMainWindow):
 
         #commections
         self.field_automatic_grow_button.clicked.connect(self.auromatically_grow)
+        self.field_manual_grow_button.clicked.connect(self.manually_grow)
 
-    def auromatically_grow(self):
+    def auromatically_grow (self):
         for days in range(30):
             food = random.randint(1, 100)
             water = random.randint(1, 10)
             light = random.randint(1, 10)
             self.field_graphics_view.scene().field.grow(light, food, water)
+        self.field_graphics_view.scene().update_status()
+
+    def manually_grow (self):
+        dialog = ManualGrowDialog()
+        dialog.exec_()
+        light, water, food = dialog.get_values()
+        self.field_graphics_view.scene().field.grow(light, food, water)
         self.field_graphics_view.scene().update_status()
 
 def main():

@@ -31,7 +31,7 @@ class Field:
         else:
             return False
 
-    def harvast_crop(self, position):
+    def harvest_crop(self, position):
         return self._crops.pop(position)
     
     def remove_animal(self, position):
